@@ -1,9 +1,12 @@
-body {
-	font: 16px "Cormorant Garamon", Arial;
+body, html {
+	font: 20px "Consolas", Arial;
 	background-color: #000;
   color: #fff;
 }
 
+.no-scrollbar {
+	scrollbar-width: none;
+}
 .no-scrollbar::-webkit-scrollbar {
 	display: none;
 }
@@ -44,7 +47,7 @@ body {
   transform: translate(-50%);
   bottom: 22%;
 	padding: 4px;
-	border: 4px solid #fff;
+	border: 3px solid #fff;
 }
 
 .bottom-text {
@@ -59,28 +62,53 @@ body {
 	z-index: 100;
 }
 
-.bottom-text footer {
-	position: absolute;
-	right: 10px;
-	bottom: -7px;
+.subscript {
+	margin: 3em 5% auto auto;
+	font: 1em "Cormorant Garamond";
+	text-align: right;
 }
 
-.pseudo {
+.bottom-text footer {
+	font: 0.8em "Cormorant Garamond";
+	position: absolute;
+	right: 10px;
+	bottom: -6px;
+}
+
+.bottom-margin {
 	position: static;
 	z-index: -100;
-	margin-top: 15%;
+	margin: 5% auto 17% auto;
+	text-align: center;
+	color: #f00;
+	font-family: "Cormorant Garamond";
+	transition: color 0.4s ease,transform 0.4s ease;
+}
+
+.bottom-margin:hover {
+	color: #000;
+	transform: rotate(-360deg);
 }
 
 .bottom-text h1 {
   font: 5em "Times New Roman";
-  line-height: 0.4;
+  line-height: 0.25;
 }
 
 .bottom-text h2 {
   font: 1.5em Arial;
+	margin-bottom: 10px;
 
 }
 
 section {
-	margin: auto 20% auto 10%;
+	line-height: 1.4;
+	width: 1000px;
+	margin: auto;
+}
+
+.intro {
+	font-style: italic;
+	color: #bbb;
+	margin-bottom: 3em;
 }
