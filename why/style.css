@@ -1,7 +1,11 @@
 body {
-	font: 16px Roboto, Arial;
+	font: 16px "Cormorant Garamon", Arial;
 	background-color: #000;
   color: #fff;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+	display: none;
 }
 
 /* .shitty-button {
@@ -44,15 +48,27 @@ body {
 }
 
 .bottom-text {
+	background-color: #000;
 	color: #fff;
+	position: fixed;
 	height: 22%;
-  z-index: 1;
   text-align: center;
   font-size: 1em;
-  position: fixed;
   bottom: 0;
   width: 100%;
+	z-index: 100;
+}
 
+.bottom-text footer {
+	position: absolute;
+	right: 10px;
+	bottom: -7px;
+}
+
+.pseudo {
+	position: static;
+	z-index: -100;
+	margin-top: 15%;
 }
 
 .bottom-text h1 {
@@ -60,7 +76,11 @@ body {
   line-height: 0.4;
 }
 
-.bottom-text p {
-  font: 1em Arial;
+.bottom-text h2 {
+  font: 1.5em Arial;
 
+}
+
+section {
+	margin: auto 20% auto 10%;
 }
