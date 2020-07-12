@@ -1,2 +1,0 @@
-# why
-Demotivator website
