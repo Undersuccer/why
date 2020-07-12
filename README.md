@@ -1,2 +1,1 @@
-# why
-Demotivator website
+Помогите, пожалуйста.
